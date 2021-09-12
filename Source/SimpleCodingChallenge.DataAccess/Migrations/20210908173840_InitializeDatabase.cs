@@ -20,7 +20,8 @@ namespace SimpleCodingChallenge.DataAccess.Migrations
                     BirthDate = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
                     JobTitle = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Salary = table.Column<double>(type: "float", nullable: false),
-                    Department = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Department = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    country = table.Column<string>(type:"nvarchar(max)",nullable:false)
                 },
                 constraints: table =>
                 {
